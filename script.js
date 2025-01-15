@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Ícone
         const icon = document.createElement('img');
         icon.className = 'icon';
-        icon.src = '/Pomodoro/timer.svg'; // Ícone inicial para trabalho
+        icon.src = './Assets/timer.svg'; // Ícone inicial para trabalho
         icon.alt = 'Timer Icon';
 
         // Nome
@@ -58,14 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     isResting = false;
                     pomodoroItem.classList.remove('resting');
                     progressBar.style.backgroundColor = '#002c76'; // Cor da barra para trabalho
-                    icon.src = '/Pomodoro/timer.png'; // Alterar para ícone de trabalho
+                    icon.src = './Assets/timer.svg'; // Alterar para ícone de trabalho
                 } else {
                     // Fim do trabalho, iniciar descanso
                     currentTime = totalTime.rest;
                     isResting = true;
                     pomodoroItem.classList.add('resting');
                     progressBar.style.backgroundColor = '#ffffff'; // Cor da barra para descanso
-                    icon.src = '/Pomodoro/moon.png'; // Alterar para ícone de descanso
+                    icon.src = './Assets/moon.svg'; // Alterar para ícone de descanso
                 }
             }
         }, 1000);
