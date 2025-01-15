@@ -58,14 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     isResting = false;
                     pomodoroItem.classList.remove('resting');
                     progressBar.style.backgroundColor = '#002c76'; // Cor da barra para trabalho
-                    icon.src = './assets/timer.png'; // Alterar para ícone de trabalho
+                    icon.src = '/Pomodoro/timer.png'; // Alterar para ícone de trabalho
                 } else {
                     // Fim do trabalho, iniciar descanso
                     currentTime = totalTime.rest;
                     isResting = true;
                     pomodoroItem.classList.add('resting');
                     progressBar.style.backgroundColor = '#ffffff'; // Cor da barra para descanso
-                    icon.src = './assets/moon.png'; // Alterar para ícone de descanso
+                    icon.src = '/Pomodoro/moon.png'; // Alterar para ícone de descanso
                 }
             }
         }, 1000);
