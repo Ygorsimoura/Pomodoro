@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pomodoroList = document.getElementById('pomodoro-list');
     const addPomodoroButton = document.getElementById('add-pomodoro');
 
-    function createPomodoro(operatorName, workTime = 10, restTime = 900) {
+    function createPomodoro(operatorName, workTime = 7200, restTime = 900) {
         const pomodoroItem = document.createElement('div');
         pomodoroItem.className = 'pomodoro-item';
 
