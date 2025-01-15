@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pomodoroList = document.getElementById('pomodoro-list');
     const addPomodoroButton = document.getElementById('add-pomodoro');
 
-    function createPomodoro(operatorName, workTime = 7200, restTime = 900) {
+    function createPomodoro(operatorName, workTime = 10, restTime = 900) {
         const pomodoroItem = document.createElement('div');
         pomodoroItem.className = 'pomodoro-item';
 
@@ -58,14 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     isResting = false;
                     pomodoroItem.classList.remove('resting');
                     progressBar.style.backgroundColor = '#002c76'; // Cor da barra para trabalho
-                    icon.src = './assets/timer.svg'; // Alterar para ícone de trabalho
+                    icon.src = './assets/timer.png'; // Alterar para ícone de trabalho
                 } else {
                     // Fim do trabalho, iniciar descanso
                     currentTime = totalTime.rest;
                     isResting = true;
                     pomodoroItem.classList.add('resting');
                     progressBar.style.backgroundColor = '#ffffff'; // Cor da barra para descanso
-                    icon.src = './assets/moon.svg'; // Alterar para ícone de descanso
+                    icon.src = './assets/moon.png'; // Alterar para ícone de descanso
                 }
             }
         }, 1000);
