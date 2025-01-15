@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Ícone
         const icon = document.createElement('img');
         icon.className = 'icon';
-        icon.src = './assets/timer.svg'; // Ícone inicial para trabalho
+        icon.src = '/Pomodoro/timer.svg'; // Ícone inicial para trabalho
         icon.alt = 'Timer Icon';
 
         // Nome
